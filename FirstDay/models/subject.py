@@ -10,3 +10,4 @@ class Subject(models.Model):
     person_id = fields.Many2one('res.partner', string='负责人')
     lesson_ids = fields.One2many('zhihui.lesson', 'subject_id', string='课程')
     desc = fields.Text(string='描述')
+    

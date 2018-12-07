@@ -7,3 +7,4 @@ class ResParter(models.Model):
 
     is_teacher = fields.Boolean(string='老师')
     is_student = fields.Boolean(string='学生')
+    

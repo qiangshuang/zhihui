@@ -15,6 +15,11 @@ class Lession(models.Model):
     
     
     seat_qty = fields.Integer(string='座位数')
-    subject_id = fields.Many2one('subject', string='科目')
+    subject_id = fields.Many2one('zhihui.subject', string='科目')
     person_id = fields.Many2one('res.partner', related='subject_id.person_id', readonly=True)
     desc = fields.Text(string='描述')
+    
+    @api.multi
+    def name_get(self):
+        return [(lesson.id, '%s:%s' % (lesson.name, lesson.teacher_id.name)) for lesson in self]
+    
