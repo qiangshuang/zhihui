@@ -2,7 +2,7 @@
 <odoo>
     <data>
 
-        <record id="action_training_teacher" model="ir.actions.act_window">
+        <record id="action_zhihui_teacher" model="ir.actions.act_window">
             <field name="name">老师</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">res.partner</field>
@@ -12,7 +12,7 @@
             <field name="context">{'default_is_teacher': True}</field>
         </record>
 
-        <record id="action_training_student" model="ir.actions.act_window">
+        <record id="action_zhihui_student" model="ir.actions.act_window">
             <field name="name">学生</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">res.partner</field>
