@@ -2,8 +2,8 @@
 <odoo>
     <data>
 
-        <record model="ir.ui.view" id="view_training_lesson_calendar">
-            <field name="model">pscloud.training.lesson</field>
+        <record model="ir.ui.view" id="view_zhihui_lesson_calendar">
+            <field name="model">zhihui.lesson</field>
             <field name="priority" eval="2"/>
             <field name="arch" type="xml">
                 <calendar string="课程日期" date_start="start_date" date_stop="end_date" color="teacher_id">
@@ -14,8 +14,8 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="view_training_lesson_graph">
-            <field name="model">pscloud.training.lesson</field>
+        <record model="ir.ui.view" id="view_zhihui_lesson_graph">
+            <field name="model">zhihui.lesson</field>
             <field name="arch" type="xml">
                 <graph string="课程">
                     <field name="start_date" type="row"/>
@@ -35,9 +35,9 @@
             </field>
         </record>
 
-        <record id="view_training_lesson_tree" model="ir.ui.view">
-            <field name="name">pscloud.training.lesson.tree</field>
-            <field name="model">pscloud.training.lesson</field>
+        <record id="view_zhihui_lesson_tree" model="ir.ui.view">
+            <field name="name">zhihui.lesson.tree</field>
+            <field name="model">zhihui.lesson</field>
             <field name="arch" type="xml">
                 <tree string="课程列表">
                     <field name="name"/>
@@ -51,9 +51,9 @@
             </field>
         </record>
 
-        <record id="view_training_lesson_form" model="ir.ui.view">
-            <field name="name">pscloud.training.lesson.form</field>
-            <field name="model">pscloud.training.lesson</field>
+        <record id="view_zhihui_lesson_form" model="ir.ui.view">
+            <field name="name">zhihui.lesson.form</field>
+            <field name="model">zhihui.lesson</field>
             <field name="arch" type="xml">
                 <form string="课程">
                     <header>
@@ -90,12 +90,12 @@
             </field>
         </record>
 
-        <record id="action_training_lesson" model="ir.actions.act_window">
+        <record id="action_zhihui_lesson" model="ir.actions.act_window">
             <field name="name">课程</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">pscloud.training.lesson</field>
+            <field name="res_model">zhihui.lesson</field>
             <field name="view_type">form</field>
-            <field name="view_id" ref="view_training_lesson_tree"/>
+            <field name="view_id" ref="view_zhihui_lesson_tree"/>
             <field name="view_mode">tree,form,calendar,graph,pivot</field>
         </record>
 
