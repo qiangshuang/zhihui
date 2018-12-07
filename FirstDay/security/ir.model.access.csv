@@ -1,3 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_zhihui_lesson,zhihui.lesson,zhihui.model_zhihui_lesson,base.group_user,1,1,1,1
-access_zhihui_subject,zhihui.subject,zhihui.model_zhihui_subject,base.group_user,1,1,1,1
+access_zhihui_lesson,zhihui.lesson,FirstDay.model_zhihui_lesson,base.group_user,1,1,1,1
+access_zhihui_subject,zhihui.subject,FirstDay.model_zhihui_subject,base.group_user,1,1,1,1
